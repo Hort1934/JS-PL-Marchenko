@@ -26,7 +26,27 @@ function updateNewsList(articles) {
 
   articles.forEach(article => {
     const li = document.createElement('li');
-    li.textContent = article.title;
+    li.className = 'news-item';
+
+    const title = document.createElement('h2');
+    title.textContent = article.title;
+
+    const img = document.createElement('img');
+    img.src = article.urlToImage || 'placeholder.jpg';
+    img.alt = article.title;
+
+    const description = document.createElement('p');
+    description.textContent = article.description || '';
+
+    const link = document.createElement('a');
+    link.href = article.url;
+    link.textContent = 'Read more';
+    link.target = '_blank';
+
+    li.appendChild(title);
+    li.appendChild(description);
+    li.appendChild(link);
+
     newsList.appendChild(li);
   });
 

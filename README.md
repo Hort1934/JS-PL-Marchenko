@@ -1,6 +1,8 @@
 # JS-PL-Marchenko
 Zadanie 2.3
 
+Stwórz aplikację, która pobiera i wyświetla aktualne wiadomości z wybranego API newsowego. Użytkownik może filtrować wiadomości według kategorii (np. sport, technologia, zdrowie).
+
 Oto przykładowa instrukcja instalacji i uruchomienia projektu, którą możesz umieścić w pliku `README.md`:
 
 ```markdown

@@ -31,9 +31,13 @@ function updateNewsList(articles) {
     const title = document.createElement('h2');
     title.textContent = article.title;
 
-    const img = document.createElement('img');
-    img.src = article.urlToImage || 'placeholder.jpg';
-    img.alt = article.title;
+    // Sprawdź, czy urlToImage jest dostępny, zanim dodasz obraz
+    if (article.urlToImage) {
+      const img = document.createElement('img');
+      img.src = article.urlToImage;
+      img.alt = article.title;
+      li.appendChild(img);
+    }
 
     const description = document.createElement('p');
     description.textContent = article.description || '';

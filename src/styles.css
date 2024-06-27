@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #category-select {
+    margin-bottom: 20px;
+  }
+  
+  #news-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #news-list li {
+    margin-bottom: 10px;
+  }
+  

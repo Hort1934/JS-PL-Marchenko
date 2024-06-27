@@ -44,7 +44,7 @@ Aplikacja pobiera i wyświetla aktualne wiadomości z wybranego API newsowego. U
    ```
 2. Podgląd zbudowanego projektu:
    ```sh
-   npm run serve
+   npm run dev
    ```
 
 ## Struktura projektu
